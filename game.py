@@ -1,5 +1,7 @@
 # game.py
 
+import random
+
 print("Rock, Paper, Scissors, Shoot!")
 
 # CAPTURE INPUTS
@@ -9,7 +11,7 @@ print("YOU CHOSE:",user_choices)
 # VALIDATE INPUTS
 
 if user_choices in ["rock", "paper", "scissors"]:
-    print("VALID")
+    pass
 else:
     print("INVALID SELECTION PLEASE TRY AGAIN")
     exit()
@@ -18,8 +20,9 @@ else:
 
 print("GENERATING...")
 
-
-
+computer_choice = random.choice(["rock", "paper", "scissors"])
+print("----------")
+print("COMPUTER CHOICE:", computer_choice)
 # DETERMINE THE WINNER
 
 # DISPLAY FINAL OUTPUTS / OUTCOMES
